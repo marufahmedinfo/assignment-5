@@ -22,6 +22,15 @@ document.getElementById('noakali-donate-btn').addEventListener("click", function
        remove.classList.add('hidden');
        document.getElementById('n-input-donation').value='';
      };
+
+  
+     const historyItem = document.createElement('div');
+     historyItem.className = "bg-blue p-4 rounded-lg border-2 border-gray-500";
+     historyItem.innerHTML = ` 
+     <h1 class="text-2xl text-gray-800">$${inputNoakali.toFixed(2)}   taka donate for famine-2024 at  fani,Bangladesh </h1>
+    <p class="text-md text-gray-500">${new Date().toString()} </p> `
+    const historyContainer = document.getElementById('history');
+    historyContainer.insertBefore(historyItem, historyContainer.firstChild);
   });
 
 
@@ -43,7 +52,15 @@ document.getElementById('noakali-donate-btn').addEventListener("click", function
       const remove = document.getElementById('modal');
       remove.classList.add('hidden');
       document.getElementById('f-input-donation').value='';
-     }
+     };
+     const historyItem = document.createElement('div');
+     historyItem.className = "bg-blue p-4 rounded-lg border-2 border-gray-500";
+     historyItem.innerHTML = `
+     <h1 class="text-2xl text-gray-800">$${inputfani.toFixed(2)}  taka donate for famine-2024 at  fani,Bangladesh </h1>
+     <p class="text-md text-gray-500">${new Date().toString()}</p>
+     `
+     const historyContainer = document.getElementById('history');
+     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
   });
 
 document.getElementById('qouta-donate-btn').addEventListener('click', function(){
@@ -68,7 +85,15 @@ document.getElementById('qouta-donate-btn').addEventListener('click', function()
       remove.classList.add('hidden');
       
       document.getElementById('q-input-donation').value='';
-    }
+    };
+    const historyItem = document.createElement('div');
+    historyItem.className = "bg-blue p-4 rounded-lg border-2 border-gray-500";
+    historyItem.innerHTML = `
+    <h1 class="text-2xl text-gray-800">$${inputquota.toFixed(2)}  taka donate for famine-2024 at  fani,Bangladesh </h1>
+    <p class="text-md text-gray-500">${new Date().toString()}</p>
+    `
+    const historyContainer = document.getElementById('history');
+    historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 })
 
 
