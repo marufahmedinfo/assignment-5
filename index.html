@@ -12,11 +12,12 @@
         footer{
             background-color: rgb(249, 247, 243);
         }
-        .navbar{
+        .hed{
             background-color: rgb(249, 247, 243);
         }
         .color1{
             background-color: rgb(180, 244, 97);
+            font-size: 1.1rem;
         }
        
 header {
@@ -24,14 +25,16 @@ header {
     position: sticky; 
     top: 0; 
     z-index: 1000;
+    backdrop-filter: blur(50px);
 }
       
      
     </style>
 </head>
 <body>
-  <header class=" container mx-auto">
-    <div class="navbar bg-base-500 px-6 sticky-header">
+  <header class="">
+    <div class="hed">
+      <div class="navbar bg-base-500 px-6 sticky-header container mx-auto">
         <div class="navbar-start">
             <a class="btn  color1">Blog</a>
         </div>
@@ -51,7 +54,8 @@ header {
            <div><h1 class=" text-xl"><span id="total-balance" >5500</span>BDT</h1></div> 
         </div>
       </div>
-      <div class="flex justify-center mt-3 gap-5">
+    </div>
+      <div class="flex justify-center mt-3 gap-5 container mx-auto">
         <button class="btn  color1">Donation</button>
         <button class="btn  color1">History</button>
     </div>
@@ -62,7 +66,7 @@ header {
 
 <!-- main section  -->
 
-  <main class="mx-auto px-6 mt-6  relative">
+  <main class="mx-auto px-6 mt-6  relative container">
 
     
  <!-- noakali section -->
@@ -163,13 +167,14 @@ header {
 <!--modal section           -->
   <div id="modal" class="">
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
-      <div class="modal-box">
-        <h3 class="text-lg font-bold">Hello!</h3>
-        <p class="py-4">Press ESC key or click the button below to close</p>
+      <div class="modal-box text-center items-center">
+        <h1 class="font-black text-5xl">Congrates!</h1>
+        <p class="py-4 text-xl">You Have Donated for Humankind</p>
+        <img src="assets/coin.png" alt="img coning" class="mx-auto h-14">
+        <h2 class="text-2xl font-black">successfully</h2>
         <div class="modal-action">
           <form method="dialog">
-             
-            <button class="btn">Close</button>
+            <button class="btn">Close Confirmation</button>
           </form>
         </div>
       </div>
@@ -183,7 +188,7 @@ header {
 
       </footer> 
       <script src="js/utilites.js"></script>
-    <script src="js/index.js"></script>
+      <script src="js/index.js"></script>
   </body>
 
 </html>
