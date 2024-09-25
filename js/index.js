@@ -19,7 +19,7 @@ document.getElementById('noakali-donate-btn').addEventListener("click", function
      }else{
        alert('please type valid input')
        const remove =document.getElementById('modal');
-       remove.classList.add('hidden');
+       remove.classList.remove('hidden');
        document.getElementById('n-input-donation').value='';
      };
 
@@ -49,7 +49,7 @@ document.getElementById('noakali-donate-btn').addEventListener("click", function
      }else{
       alert('please provide a valid input');
       const remove = document.getElementById('modal');
-      remove.classList.add('hidden');
+      remove.classList.remove('hidden');
       document.getElementById('f-input-donation').value='';
      };
      const historyItem = document.createElement('div');
@@ -81,7 +81,7 @@ document.getElementById('qouta-donate-btn').addEventListener('click', function()
       alert('please provide a valid input');
 
       const remove = document.getElementById('modal');
-      remove.classList.add('hidden');
+      remove.classList.remove('hidden');
       
       document.getElementById('q-input-donation').value='';
     };
