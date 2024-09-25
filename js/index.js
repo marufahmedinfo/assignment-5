@@ -27,12 +27,11 @@ document.getElementById('noakali-donate-btn').addEventListener("click", function
      const historyItem = document.createElement('div');
      historyItem.className = "bg-blue p-4 rounded-lg border-2 border-gray-500";
      historyItem.innerHTML = ` 
-     <h1 class="text-2xl text-gray-800">$${inputNoakali.toFixed(2)}   taka donate for famine-2024 at  fani,Bangladesh </h1>
+     <h1 class="text-2xl text-gray-800">$${inputNoakali.toFixed(2)}   taka donate for famine-2024 at  noakali,Bangladesh </h1>
     <p class="text-md text-gray-500">${new Date().toString()} </p> `
     const historyContainer = document.getElementById('history');
     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
   });
-
 
   document.getElementById('fani-donate-btn').addEventListener("click",function(){
     const total = getTextFieldById("total-balance");
@@ -89,7 +88,7 @@ document.getElementById('qouta-donate-btn').addEventListener('click', function()
     const historyItem = document.createElement('div');
     historyItem.className = "bg-blue p-4 rounded-lg border-2 border-gray-500";
     historyItem.innerHTML = `
-    <h1 class="text-2xl text-gray-800">$${inputquota.toFixed(2)}  taka donate for famine-2024 at  fani,Bangladesh </h1>
+    <h1 class="text-2xl text-gray-800">$${inputquota.toFixed(2)}  taka donate for famine-2024 at  quota,Bangladesh </h1>
     <p class="text-md text-gray-500">${new Date().toString()}</p>
     `
     const historyContainer = document.getElementById('history');
@@ -131,3 +130,11 @@ donation.addEventListener('click', function(){
   addTohide.classList.remove('hidden');
 });
 
+const home = document.getElementById('homes');
+const blog = document.getElementById("blog");
+blog.onclick = function(){
+  window.location.href = "blog.html";
+};
+home.onclick = function(){
+  window.location.href = "index.html";
+};
